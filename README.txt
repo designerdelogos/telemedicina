@@ -11,17 +11,8 @@ COMO VISUALIZAR
 2. Abra o arquivo index.html no navegador.
 3. Não é necessário servidor local para visualizar a página.
 
-CHECKOUT / PAGAMENTOS
-No arquivo script.js existe o objeto PAYMENT_LINKS:
-
-const PAYMENT_LINKS = {
-  essencial: "",
-  plus: "",
-  prime: ""
-};
-
-Cole ali os links de assinatura do Stripe, Asaas, Mercado Pago ou outro gateway.
-Enquanto os links estiverem vazios, os botões direcionam para o WhatsApp em modo de demonstração.
+ASSINATURA / WHATSAPP
+Os botões dos planos abrem um modal com o plano selecionado e direcionam a assinatura para o WhatsApp oficial, já com o nome e o valor do plano preenchidos na mensagem.
 
 IMPORTANTE
 Os benefícios, preços e afirmações comerciais foram organizados a partir do material fornecido.
