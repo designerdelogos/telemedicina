@@ -16,8 +16,8 @@ No arquivo script.js existe o objeto PAYMENT_LINKS:
 
 const PAYMENT_LINKS = {
   essencial: "",
-  completo: "",
-  familia: ""
+  plus: "",
+  prime: ""
 };
 
 Cole ali os links de assinatura do Stripe, Asaas, Mercado Pago ou outro gateway.
