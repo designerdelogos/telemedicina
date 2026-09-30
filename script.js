@@ -6,14 +6,14 @@
 */
 const PAYMENT_LINKS = {
   essencial: "",
-  completo: "",
-  familia: ""
+  plus: "",
+  prime: ""
 };
 
 const PLAN_INFO = {
-  essencial: { name: "Plano Essencial", price: "R$ 19,90/mês" },
-  completo: { name: "Plano Completo", price: "R$ 29,90/mês" },
-  familia: { name: "Plano Família", price: "R$ 49,90/mês" }
+  essencial: { name: "Plano Essencial", price: "R$ 29,99/mês" },
+  plus: { name: "Plano Plus", price: "R$ 49,90/mês" },
+  prime: { name: "Plano Prime", price: "R$ 129,90/mês" }
 };
 
 const header = document.querySelector('.site-header');
@@ -100,6 +100,36 @@ document.querySelectorAll('[data-plan]').forEach(button => {
 });
 
 document.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', closeModal));
-document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
+
+const coverageModal = document.getElementById('coverageModal');
+
+function openCoverageModal() {
+  if (!coverageModal) return;
+  coverageModal.classList.add('active');
+  coverageModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => coverageModal.querySelector('.modal-close')?.focus(), 100);
+}
+
+function closeCoverageModal() {
+  if (!coverageModal) return;
+  coverageModal.classList.remove('active');
+  coverageModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('[data-coverage]').forEach(button => {
+  button.addEventListener('click', openCoverageModal);
+});
+
+document.querySelectorAll('[data-close-coverage]').forEach(el => {
+  el.addEventListener('click', closeCoverageModal);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (modal.classList.contains('active')) closeModal();
+  if (coverageModal?.classList.contains('active')) closeCoverageModal();
+});
 
 document.getElementById('year').textContent = new Date().getFullYear();
