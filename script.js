@@ -1,15 +1,4 @@
-/*
-  CONSULTE JÁ TELEMEDICINA
-  -----------------------------------------
-  Para ativar o checkout recorrente, substitua os valores vazios abaixo
-  pelos links reais do Stripe Payment Links, Asaas, Mercado Pago etc.
-*/
-const PAYMENT_LINKS = {
-  essencial: "",
-  plus: "",
-  prime: ""
-};
-
+/* CONSULTE JÁ TELEMEDICINA */
 const PLAN_INFO = {
   essencial: { name: "Plano Essencial", price: "R$ 29,99/mês" },
   plus: { name: "Plano Plus", price: "R$ 49,90/mês" },
@@ -64,24 +53,15 @@ staggerParents.forEach(parent => {
 function openPlanModal(planKey) {
   const data = PLAN_INFO[planKey];
   if (!data) return;
-  const link = PAYMENT_LINKS[planKey];
+
   planName.textContent = data.name;
   planPrice.textContent = data.price;
   modalTitle.textContent = `Você escolheu o ${data.name}`;
-
-  if (link) {
-    checkoutButton.href = link;
-    checkoutButton.target = '_blank';
-    checkoutButton.rel = 'noopener';
-    checkoutButton.textContent = 'Ir para pagamento';
-    modalDescription.textContent = 'Você será direcionado para o checkout seguro da assinatura.';
-  } else {
-    checkoutButton.href = `https://wa.me/5534991564316?text=${encodeURIComponent(`Olá! Quero assinar o ${data.name} (${data.price}).`)}`;
-    checkoutButton.target = '_blank';
-    checkoutButton.rel = 'noopener';
-    checkoutButton.textContent = 'Solicitar assinatura pelo WhatsApp';
-    modalDescription.textContent = 'O checkout ainda está em modo de demonstração. Enquanto isso, o botão abaixo inicia o atendimento pelo WhatsApp.';
-  }
+  modalDescription.textContent = 'Continue sua assinatura pelo WhatsApp.';
+  checkoutButton.href = `https://wa.me/5534991564316?text=${encodeURIComponent(`Olá! Quero assinar o ${data.name} (${data.price}).`)}`;
+  checkoutButton.target = '_blank';
+  checkoutButton.rel = 'noopener';
+  checkoutButton.textContent = 'Solicitar assinatura pelo WhatsApp';
 
   modal.classList.add('active');
   modal.setAttribute('aria-hidden', 'false');
