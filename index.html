@@ -109,21 +109,21 @@
             {
               "@type": "Offer",
               "name": "Plano Essencial",
-              "price": "19.90",
+              "price": "29.99",
               "priceCurrency": "BRL",
               "url": "https://consultejatelemedicina24h.com.br/#planos"
             },
             {
               "@type": "Offer",
-              "name": "Plano Completo",
-              "price": "29.90",
-              "priceCurrency": "BRL",
-              "url": "https://consultejatelemedicina24h.com.br/#planos"
-            },
-            {
-              "@type": "Offer",
-              "name": "Plano Família",
+              "name": "Plano Plus",
               "price": "49.90",
+              "priceCurrency": "BRL",
+              "url": "https://consultejatelemedicina24h.com.br/#planos"
+            },
+            {
+              "@type": "Offer",
+              "name": "Plano Prime",
+              "price": "129.90",
               "priceCurrency": "BRL",
               "url": "https://consultejatelemedicina24h.com.br/#planos"
             }
@@ -159,10 +159,10 @@
           },
           {
             "@type": "Question",
-            "name": "O Plano Família atende quantas pessoas?",
+            "name": "O Plano Prime atende quantas pessoas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "O material recebido informa cobertura para até 4 pessoas na assinatura família."
+              "text": "O Plano Prime é destinado ao titular + 3 dependentes."
             }
           },
           {
@@ -310,48 +310,51 @@
         </div>
         <div class="pricing-grid reveal-stagger">
           <article class="price-card">
-            <div class="price-top"><span class="plan-icon">01</span><div><h3>Plano Essencial</h3><p>Praticidade para o dia a dia</p></div></div>
-            <div class="price"><small>R$</small><strong>19</strong><sup>,90</sup><span>/mês</span></div>
+            <div class="price-top"><span class="plan-icon">01</span><div><h3>Plano Essencial</h3><p>Individual</p></div></div>
+            <div class="price"><small>R$</small><strong>29</strong><sup>,99</sup><span>/mês</span></div>
             <ul class="feature-list">
               <li>Telemedicina 24 horas</li>
-              <li>Orientação médica online</li>
-              <li>Receitas quando indicadas</li>
-              <li>Atestados quando indicados</li>
-              <li>Requisição de exames</li>
+              <li>Pronto Atendimento online</li>
+              <li>Atendimento individual</li>
+              <li>Descontos em atendimento presencial</li>
+              <li>Desconto em contas de energia</li>
             </ul>
             <button class="btn btn-plan" data-plan="essencial">Assinar Plano Essencial</button>
           </article>
 
           <article class="price-card featured">
             <div class="popular-badge">MAIS ESCOLHIDO</div>
-            <div class="price-top"><span class="plan-icon">02</span><div><h3>Plano Completo</h3><p>Mais possibilidades de cuidado</p></div></div>
-            <div class="price"><small>R$</small><strong>29</strong><sup>,90</sup><span>/mês</span></div>
+            <div class="price-top"><span class="plan-icon">02</span><div><h3>Plano Plus</h3><p>Individual + Odontológico</p></div></div>
+            <div class="price"><small>R$</small><strong>49</strong><sup>,90</sup><span>/mês</span></div>
             <ul class="feature-list">
               <li>Telemedicina 24 horas</li>
-              <li>+ de 20 especialidades</li>
-              <li>Receitas e atestados</li>
-              <li>Requisição de exames</li>
-              <li>Sem carência*</li>
-              <li>Sem limite de idade*</li>
+              <li>Acesso a especialidades clínicas*</li>
+              <li>Nutrição e Psicologia**</li>
+              <li>Descontos em atendimento presencial</li>
+              <li class="dental-benefit">Plano Odontológico Completo</li>
+              <li>Desconto em contas de energia</li>
             </ul>
-            <button class="btn btn-plan featured-btn" data-plan="completo">Assinar Plano Completo</button>
+            <button class="plan-details-btn" type="button" data-coverage>Ver especialidades e cobertura odontológica</button>
+            <button class="btn btn-plan featured-btn" data-plan="plus">Assinar Plano Plus</button>
           </article>
 
           <article class="price-card family-card">
-            <div class="price-top"><span class="plan-icon">04</span><div><h3>Plano Família</h3><p>Cuidado para até 4 pessoas</p></div></div>
-            <div class="price"><small>R$</small><strong>49</strong><sup>,90</sup><span>/mês</span></div>
+            <div class="price-top"><span class="plan-icon">03</span><div><h3>Plano Prime</h3><p>Titular + 3 dependentes</p></div></div>
+            <div class="price"><small>R$</small><strong>129</strong><sup>,90</sup><span>/mês</span></div>
             <ul class="feature-list">
-              <li>Para até 4 pessoas</li>
-              <li>Consultas médicas online ilimitadas*</li>
-              <li>Orientação médica via telefone*</li>
-              <li>Preços especiais em consultas e exames*</li>
-              <li>Descontos e benefícios exclusivos*</li>
-              <li>Sem carência*</li>
+              <li>Telemedicina 24 horas</li>
+              <li>Titular + 3 dependentes</li>
+              <li>Acesso a especialidades clínicas*</li>
+              <li>Nutrição e Psicologia**</li>
+              <li>Descontos em atendimento presencial</li>
+              <li class="dental-benefit">Plano Odontológico Completo</li>
+              <li>Desconto em contas de energia</li>
             </ul>
-            <button class="btn btn-plan" data-plan="familia">Assinar Plano Família</button>
+            <button class="plan-details-btn" type="button" data-coverage>Ver especialidades e cobertura odontológica</button>
+            <button class="btn btn-plan" data-plan="prime">Assinar Plano Prime</button>
           </article>
         </div>
-        <p class="plans-note">*Condições apresentadas conforme material fornecido pelo cliente. Regras finais, elegibilidade e cobertura devem constar nos termos comerciais do serviço.</p>
+        <p class="plans-note">*Especialidades clínicas mediante encaminhamento do clínico geral após consulta no Pronto Atendimento. **Nutrição e Psicologia podem ser agendadas diretamente e estão limitadas a 2 atendimentos por mês, cada.</p>
       </div>
     </section>
 
@@ -379,13 +382,13 @@
     <section class="family-highlight section">
       <div class="container family-panel reveal-up">
         <div class="family-panel-copy">
-          <span class="eyebrow light">Plano Família</span>
+          <span class="eyebrow light">Plano Prime</span>
           <h2>Mais tranquilidade para quem cuida de quem ama.</h2>
-          <p>Uma opção pensada para até 4 pessoas, reunindo telemedicina, orientação e benefícios em uma única assinatura.</p>
+          <p>Uma opção para o titular + 3 dependentes, reunindo telemedicina, especialidades e benefícios em uma única assinatura.</p>
           <div class="mini-features">
-            <span>Até 4 pessoas</span><span>Consultas online</span><span>Benefícios exclusivos</span>
+            <span>Titular + 3 dependentes</span><span>Consultas online</span><span>Plano odontológico</span>
           </div>
-          <button class="btn btn-white" data-plan="familia">Quero o Plano Família</button>
+          <button class="btn btn-white" data-plan="prime">Quero o Plano Prime</button>
         </div>
         <div class="family-panel-image"><img src="assets/images/familia.avif" alt="Família recebendo orientação médica em atendimento de saúde" width="1122" height="1402" loading="lazy" decoding="async" /></div>
       </div>
@@ -403,7 +406,7 @@
           <details><summary>O atendimento funciona 24 horas?</summary><p>O material fornecido informa atendimento médico por telemedicina 24 horas, 7 dias por semana.</p></details>
           <details><summary>Preciso instalar algum aplicativo?</summary><p>O acesso poderá ser feito conforme a plataforma disponibilizada pelo serviço. Antes da publicação final, informe o fluxo exato para ajustarmos esta resposta.</p></details>
           <details><summary>Os planos possuem carência?</summary><p>O material comercial recebido divulga opção sem carência. A regra final precisa estar alinhada aos termos do plano.</p></details>
-          <details><summary>O Plano Família atende quantas pessoas?</summary><p>O material recebido informa cobertura para até 4 pessoas na assinatura família.</p></details>
+          <details><summary>O Plano Prime atende quantas pessoas?</summary><p>O Plano Prime é destinado ao titular + 3 dependentes.</p></details>
           <details><summary>Como é feito o pagamento?</summary><p>A landing page está preparada para receber links de checkout recorrente. Stripe, Asaas ou outro gateway podem ser conectados aos botões dos planos.</p></details>
         </div>
       </div>
@@ -443,6 +446,68 @@
       </div>
     </div>
   </footer>
+
+  <div class="plan-modal coverage-modal" id="coverageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-coverage></div>
+    <div class="modal-card coverage-card" role="dialog" aria-modal="true" aria-labelledby="coverageTitle">
+      <button class="modal-close" type="button" aria-label="Fechar" data-close-coverage>×</button>
+      <span class="eyebrow">Coberturas dos planos Plus e Prime</span>
+      <h3 id="coverageTitle">Especialidades e Plano Odontológico</h3>
+      <p>Consulte abaixo as especialidades clínicas e os procedimentos contemplados na cobertura odontológica.</p>
+
+      <div class="coverage-grid">
+        <section class="coverage-section">
+          <h4>Especialidades Clínicas</h4>
+          <ul class="coverage-list specialties-list">
+            <li>Alergia e Imunologia</li>
+            <li>Cardiologia</li>
+            <li>Cirurgia Vascular</li>
+            <li>Coloproctologia</li>
+            <li>Dermatologia / Pediátrica</li>
+            <li>Endocrinologia / Pediátrica</li>
+            <li>Gastroenterologia / Pediátrica</li>
+            <li>Geriatria</li>
+            <li>Ginecologia / Obstetrícia</li>
+            <li>Hematologia / Pediátrica</li>
+            <li>Infectologia / Pediátrica</li>
+            <li>Mastologia</li>
+            <li>Nefrologia</li>
+            <li>Neurologia</li>
+            <li>Nutrologia / Pediátrica</li>
+            <li>Oftalmologia / Pediátrica</li>
+            <li>Ortopedia</li>
+            <li>Otorrinolaringologia / Pediátrica</li>
+            <li>Pediatria</li>
+            <li>Pneumologia / Pediátrica</li>
+            <li>Psiquiatria</li>
+            <li>Reumatologia</li>
+            <li>Urologia</li>
+          </ul>
+        </section>
+
+        <section class="coverage-section dental-section">
+          <h4>Plano Odontológico Completo</h4>
+          <ul class="coverage-list dental-list">
+            <li><strong>Diagnóstico:</strong> Consultas.</li>
+            <li><strong>Urgência:</strong> Curativo e alívio da dor.</li>
+            <li><strong>Radiologia:</strong> Panorâmica e radiografias simples.</li>
+            <li><strong>Prevenção:</strong> Profilaxia (limpeza), aplicação de flúor e orientação de higiene bucal.</li>
+            <li><strong>Odontopediatria:</strong> Extração de dente de leite, restauração e canal.</li>
+            <li><strong>Dentística:</strong> Restaurações em resina e amálgama (coroa).</li>
+            <li><strong>Endodontia (canal):</strong> Tratamento e retratamento de canal.</li>
+            <li><strong>Periodontia (gengiva):</strong> Limpeza, gengivectomia e gengivoplastia.</li>
+            <li><strong>Cirurgia:</strong> Extração simples e do terceiro molar (siso).</li>
+            <li><strong>Prótese:</strong> Exclusivamente pino, coroa e bloco. Prótese unitária quando houver a raiz do dente.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="coverage-rules">
+        <p><strong>* Especialidades clínicas:</strong> o acesso pela opção “Agendar consulta” ocorre somente através de encaminhamento do clínico geral após consulta no Pronto Atendimento.</p>
+        <p><strong>** Nutrição e Psicologia:</strong> podem ser agendadas sem passar pelo Pronto Atendimento e estão limitadas a 2 atendimentos por mês, cada.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="plan-modal" id="planModal" aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
