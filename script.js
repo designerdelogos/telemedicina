@@ -58,7 +58,7 @@ function openPlanModal(planKey) {
   planPrice.textContent = data.price;
   modalTitle.textContent = `Você escolheu o ${data.name}`;
   modalDescription.textContent = 'Continue sua assinatura pelo WhatsApp.';
-  checkoutButton.href = `https://wa.me/5534991564316?text=${encodeURIComponent(`Olá! Quero assinar o ${data.name} (${data.price}).`)}`;
+  checkoutButton.href = `https://wa.me/553496732622?text=${encodeURIComponent(`Olá! Quero assinar o ${data.name} (${data.price}).`)}`;
   checkoutButton.target = '_blank';
   checkoutButton.rel = 'noopener';
   checkoutButton.textContent = 'Solicitar assinatura pelo WhatsApp';
